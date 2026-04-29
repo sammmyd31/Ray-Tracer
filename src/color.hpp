@@ -1,0 +1,22 @@
+#ifndef COLOR_H
+#define COLOR_H
+
+#include "vec3.hpp"
+
+#include <iostream>
+
+using color = vec3;
+
+void write_color(std::ostream& out, const color& pixel_color) {
+    double r = pixel_color.x();
+    double g = pixel_color.y();
+    double b = pixel_color.z();
+
+    int rbyte = int(r * 255.999);
+    int gbyte = int(g * 255.999);
+    int bbyte = int(b * 255.999);
+
+    std::cout << rbyte << ' ' << gbyte << ' ' << bbyte << "\n";
+}
+
+#endif
