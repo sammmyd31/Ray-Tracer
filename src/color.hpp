@@ -1,11 +1,11 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-#include "vec3.hpp"
+#include "vector3.hpp"
 
 #include <iostream>
 
-using color = vec3;
+using color = vector3;
 
 void write_color(std::ostream& out, const color& pixel_color) {
     double r = pixel_color.x();
