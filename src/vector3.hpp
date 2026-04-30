@@ -107,12 +107,4 @@ inline vector3 random_unit_vector() {
     }
 }
 
-inline vector3 random_on_hempisphere(const vector3& normal) {
-    vector3 on_unit_sphere = random_unit_vector();
-    if (dot(on_unit_sphere, normal) > 0.0) {
-        return on_unit_sphere;
-    }
-    return -on_unit_sphere;
-}
-
 #endif
