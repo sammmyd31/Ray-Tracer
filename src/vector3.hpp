@@ -1,8 +1,6 @@
 #ifndef VECTOR3_H
 #define VECTOR3_H
 
-#include "utils.hpp"
-
 class vector3 {
 public:
     double e[3];

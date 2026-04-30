@@ -1,8 +1,6 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-#include "utils.hpp"
-
 #include "vector3.hpp"
 
 using color = vector3;
