@@ -42,6 +42,11 @@ public:
         return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];
     }
 
+    bool near_zero() const {
+        double s = 1e-8;
+        return (std::fabs(e[0] < s) && std::fabs(e[1] < s) && std::fabs(e[2] < s));
+    }
+
     static vector3 random() {
         return vector3(random_double(), random_double(), random_double());
     }
@@ -105,6 +110,10 @@ inline vector3 random_unit_vector() {
             return p / sqrt(lensq);
         }
     }
+}
+
+inline vector3 reflect(const vector3& v, const vector3& n) {
+    return v - 2*dot(v, n)*n;
 }
 
 #endif
