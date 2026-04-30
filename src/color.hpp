@@ -1,9 +1,9 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-#include "vector3.hpp"
+#include "utils.hpp"
 
-#include <iostream>
+#include "vector3.hpp"
 
 using color = vector3;
 

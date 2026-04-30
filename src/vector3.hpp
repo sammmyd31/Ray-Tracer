@@ -1,8 +1,7 @@
-#ifndef VEC3_H
-#define VEC3_H
+#ifndef VECTOR3_H
+#define VECTOR3_H
 
-#include <cmath>
-#include <iostream>
+#include "utils.hpp"
 
 class vector3 {
 public:

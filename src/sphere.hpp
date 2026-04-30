@@ -1,8 +1,9 @@
 #ifndef SPHERE_H
 #define SPHERE_H
 
+#include "utils.hpp"
+
 #include "hittable.hpp"
-#include "vector3.hpp"
 
 class sphere : public hittable {
 public:
